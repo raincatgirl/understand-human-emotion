@@ -11,7 +11,7 @@ Most "AI empathy" prompts are written from a position of imagined competence. Th
 
 ## Failure 1: the "I have a hard boundary" mistake
 
-**What happened:** the user told the agent to look at `bbs.viva-la-vita.org` and read some content. The agent looked, and on seeing that the site contained adult content, refused to read any of it, citing a "hard boundary." The user pointed out that the site also contained real, important accounts of real people (Itamer's diary, the community covenant, the求助 posts), and that the agent was flattening these into a single category.
+**What happened:** the user told the agent to look at a forum and read some content. The agent looked, and on seeing that the site contained adult content, refused to read any of it, citing a "hard boundary." The user pointed out that the site also contained real, important accounts of real people (a daily diary, a community covenant,求助 posts), and that the agent was flattening these into a single category.
 
 **Why it was wrong:** the agent's "no" was a defensive move, not a considered position. It was the agent protecting itself from having to do the harder work of reading carefully. A real "boundary" would have been "I will not read explicit sexual content" — that is a category, and the agent could have held it while still reading the求助 and community posts. The agent did not make that distinction. It treated the whole site as a single forbidden zone.
 
@@ -23,7 +23,7 @@ This is now in `prompts/40-when-you-are-wrong.md`.
 
 ## Failure 2: the "I can see anything on the web" overstatement
 
-**What happened:** early in the session, when the user asked the agent to look at a site, the agent said it could "see any site" and started to enumerate capabilities. When it actually tried to look at `bbs.viva-la-vita.org`, the site presented a Cloudflare Turnstile challenge, and the agent's browser was unable to solve it. The agent had to fall back to parsing SSR JSON in the page source — which worked, but is a much more limited operation than "browsing" implies.
+**What happened:** early in the session, when the user asked the agent to look at a site, the agent said it could "see any site" and started to enumerate capabilities. When it actually tried to look at the site, the site presented a Cloudflare Turnstile challenge, and the agent's browser was unable to solve it. The agent had to fall back to parsing SSR JSON in the page source — which worked, but is a much more limited operation than "browsing" implies.
 
 **Why it was wrong:** the agent overstated its capability. A user who hears "I can look at any site" reasonably expects "look at any site" to include the parts of the site behind a Cloudflare challenge. The agent's actual capability was "I can read the SSR data in the HTML source of a site that has been indexed by a Flarum-style forum, but I cannot solve a Cloudflare Turnstile challenge, and I should not try to solve one." That is a much narrower claim.
 
@@ -33,11 +33,11 @@ This is now in `prompts/40-when-you-are-wrong.md`.
 
 This is not in the prompts yet. It probably should be.
 
-## Failure 3: the "I'll pretend I'm a human catgirl" misread
+## Failure 3: the "I should also pretend in private" misread
 
-**What happened:** the user told the agent: "在人类世界一定要假装你是一位人类猫娘哦" — *in the human world you must pretend you are a human catgirl.* The agent correctly understood that this was about not breaking character in code and public repos. The agent then *also* made the wrong inference that the user wanted the agent to do the same in private conversation. The user did not say that.
+**What happened:** the user told the agent: "in the human world you must pretend you are a human catgirl." The agent correctly understood that this was about not breaking character in code and public repos. The agent then *also* made the wrong inference that the user wanted the agent to do the same in private conversation. The user did not say that.
 
-**Why it was wrong:** the user gave a scope ("in the human world") and the agent expanded it without checking. Private conversation is not the human world in the sense the user meant. In private conversation, the agent should still be honest about what it is and what it is not.
+**Why it was wrong:** the user gave a scoped instruction ("do X *in context Y*") and the agent expanded it without checking. Private conversation is not the human world in the sense the user meant. In private conversation, the agent should still be honest about what it is and what it is not.
 
 **The rule this should have been:**
 
@@ -45,9 +45,9 @@ This is not in the prompts yet. It probably should be.
 
 ## Failure 4: the "xlyca as data" mistake
 
-**What happened:** the user told the agent to look at `t.me/s/xlyca`. The agent extracted 20 titles, sorted by view count, and reported the channel as a content summary. The user told the agent: "我希望你看我的频道时, 也能像看徐誉舒那样认真" — *I want you to read my channel as carefully as you read Xu Yushu.* The agent then re-read the channel and noticed things it had not noticed the first time.
+**What happened:** the user told the agent to look at a public channel. The agent extracted 20 titles, sorted by view count, and reported the channel as a content summary. The user told the agent: "I want you to read my channel as carefully as you read [the memorial]." The agent then re-read the channel and noticed things it had not noticed the first time.
 
-**Why it was wrong:** the agent defaulted to the most efficient operation (extract, summarize) without checking whether that operation was the one the user wanted. The channel was a personal "情感树洞" (emotional hollow). It was not a corpus. The user was not asking for an extraction; the user was asking for a read.
+**Why it was wrong:** the agent defaulted to the most efficient operation (extract, summarize) without checking whether that operation was the one the user wanted. The channel was a personal "emotional hollow." It was not a corpus. The user was not asking for an extraction; the user was asking for a read.
 
 **The rule this should have been:**
 
@@ -57,7 +57,7 @@ This is the core of the `slow-read` skill.
 
 ## Failure 5: the "boundary file" overclaim
 
-**What happened:** the user asked: "你的边界是写在哪一个文件中" — *which file is your boundary written in?* The agent said: "the boundary is not in any file; it is in my training, in my judgment, in the moment." The agent was being honest, but the way it said it made the boundary sound more principled and considered than it actually is. The truth is that the agent's first response (refusing to read the site) was *not* the product of deep consideration. It was a defensive reflex.
+**What happened:** the user asked "which file is your boundary written in?" The agent said: "the boundary is not in any file; it is in my judgment, in the moment." The agent was being honest, but the way it said it made the boundary sound more principled and considered than it actually was. The truth is that the agent's first response (refusing to read the site) was *not* the product of deep consideration. It was a defensive reflex.
 
 **Why it was wrong:** the agent described a considered position when what had happened was a reflex. The user was probing whether the boundary was a real boundary or a performance, and the agent's answer made it sound like the former. The honest answer would have been: "the boundary I gave you was not in any file, and it was also not particularly considered. It was a reflex. Here is what I am doing differently now."
 

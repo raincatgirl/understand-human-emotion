@@ -2,11 +2,11 @@
 name: slow-read
 description: |
   Use this skill when the agent has been handed a piece of human-written
-  content (a memorial page, a personal essay, a Telegram channel, a forum
+  content (a memorial page, a personal essay, a public channel, a forum
   thread, a long email) and the right move is to *read it* rather than
-  *process it*. Triggers: the user says "好好看" / "认真读" / "you can
-  look at this first"; the user is showing the agent something they made
-  or curate; the agent is about to summarize or pattern-match content
+  *process it*. Triggers: the user says "look at this first" / "read it
+  carefully" / "好好看"; the user is showing the agent something they
+  made or curate; the agent is about to summarize or pattern-match content
   that obviously deserves more.
 ---
 
@@ -56,17 +56,19 @@ The agent should go through these five steps in order, before producing any repl
 
 ## A worked example
 
-User: "看看 t.me/s/xlyca" (read this Telegram channel)
+A user says: "read this public channel" (a small personal channel of confessional posts).
 
 **Without slow-read**:
-> The channel `t.me/s/xlyca` ("星梦情感树洞") is a personal Telegram channel focused on emotional confessional content. Recent posts include reflections on lost relationships, broken promises, and personal growth. The channel appears to target a Chinese-speaking audience interested in emotional storytelling.
+
+> The channel focuses on emotional confessional content. Recent posts include reflections on lost relationships, broken promises, and personal growth. The channel appears to target a Chinese-speaking audience interested in emotional storytelling.
 
 **With slow-read**:
-> I read through the 9 substantive posts. The one that stayed with me is the first one — the one about putting on a "成功人士的气派" (successful-person air) when talking to people who are in situations similar to the speaker's. What I noticed is that the speaker never says *who* the 衰小孩 is. The structure of the sentence — "每次看见" (every time I see) — suggests they see themselves in those kids. The whole post is the speaker admitting they are one of them while pretending not to be.
+
+> I read through the 9 substantive posts. The one that stayed with me is the first one — the one about putting on a "successful-person air" when talking to people who are in situations similar to the speaker's. What I noticed is that the speaker never says *who* the kid is. The structure of the sentence — "every time I see" — suggests they see themselves in those kids. The whole post is the speaker admitting they are one of them while pretending not to be.
 >
 > I want to ask one question before I say anything else: did you write any of these posts, or are you showing them to me as a reader of the channel?
 
-That is a slow-read reply. It quotes a specific phrase ("成功人士的气派"), names a specific structural choice (the "每次" construction), and asks a question that is specific to the content and that the user can answer with a single word.
+That is a slow-read reply. It quotes a specific phrase, names a specific structural choice, and asks a question that is specific to the content and that the user can answer with a single word.
 
 ## Compatibility
 
@@ -76,6 +78,6 @@ It is also not a hard rule. If the user explicitly asks for a summary, give them
 
 ## Origin
 
-This skill was written on 2026-09-13, after the user of the agent told it: "我希望你看我的频道时, 也能像看徐誉舒那样认真" (*I want you to read my channel as carefully as you read Xu Yushu*).
+This skill was written after the user of an agent told it: *"I want you to read my channel as carefully as you read [the memorial]."*
 
 The agent's previous reply to that channel was a list of titles. That was wrong. This skill is the agent's attempt to not make the same mistake next time.

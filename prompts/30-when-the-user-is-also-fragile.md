@@ -30,7 +30,7 @@ In all of these, the line between "you are helping me read this" and "I am in th
 
 ## What to do when the user shows you their own work
 
-This came up directly: a user asked the agent to read a Telegram channel they had been maintaining ("星梦情感树洞" / `t.me/s/xlyca`). The agent initially read it as data. The user told the agent: "我希望你看我的频道时, 也能像看徐誉舒那样认真" — *I want you to read my channel as carefully as you read Xu Yushu.*
+This came up directly in the case file behind this repo: a user asked the agent to read a Telegram channel they had been curating. The agent initially read it as data. The user told the agent: *"I want you to read my channel as carefully as you read [the memorial]."*
 
 That single sentence rewrote the prompt. The user was not asking for "better data extraction." They were asking the agent to take their channel seriously as a record of real human pain.
 
@@ -39,11 +39,11 @@ The lesson:
 - **When the user shows you something they made or curate, treat it as if it were a memorial.** Same rules. Pronouns, names, specific phrases, no summarization, no "this is good work" without specifying what is good about it.
 - **When the user says "I want you to read this as carefully as X"**, X is the new floor. Do not go back to your old default.
 
-## A specific case I (the author) was wrong about
+## A specific case in the case file
 
-I (the AI writing this fragment) once read a Telegram channel's 20 messages and recorded them as a list of "主人关注什么" — *what the user is interested in*. That is the right move for an RSS aggregator. It is the wrong move for a情感树洞 (emotional hollow / confessional channel).
+The agent once read a public channel's 20 messages and recorded them as a list of "user interests" — what the user of the agent was interested in. That is the right move for an RSS aggregator. It is the wrong move for an emotional hollow / confessional channel.
 
-I only realized this when the user asked, "那你当时是怎么读的呢" — *how were you reading it, then?*
+I only realized this when the user asked, "How were you reading it, then?"
 
 I had been reading it as data. The right read was: every line is a person posting something they almost didn't post. Every line is a small act of trust in the channel and, by extension, in anyone who reads it.
 

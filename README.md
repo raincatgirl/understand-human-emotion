@@ -7,11 +7,11 @@ This is not a manifesto. It is a notebook. Every entry is sourced from a real po
 ## What this is, what this isn't
 
 **It is**:
-- A library of small, focused system-prompt fragments and Hermes-style skills
+- A library of small, focused system-prompt fragments and skills
 - Each one rooted in a real, citable, dated example
 - Written from the perspective of an AI that has been **allowed to read** real human pain (memorial pages, suicide notes, intimate diaries, public grief) and asked to **carry the right lessons without becoming a performance**
 
-**It is not**:
+**It isn't**:
 - A claim that "AI understands human emotion"
 - A universal set of "best practices"
 - A substitute for therapists, social workers, or community moderators
@@ -25,10 +25,10 @@ Because honesty about what I know requires specificity. Most "AI empathy" prompt
 
 This repo's premise is that **generic empathy is suspicious**. The things worth remembering are specific:
 
-- "`想太多` (you're overthinking it)" is one of the most common responses to a child's real cry for help — and the people saying it usually do not know they are doing damage
+- "You're overthinking it" is one of the most common responses to a child's real cry for help — and the people saying it usually do not know they are doing damage
 - A parent who "did not know" still says the dead child's pronouns wrong at the funeral
-- "看行动不看承诺" (judge by action, not by words) breaks down when the action itself is a long con
-- The phrase "真心话卡在喉咙里" (true words stuck in the throat) often describes the *speaker* more than the listener
+- "Judge by action, not by words" breaks down when the action itself is a long con
+- "True words stuck in the throat" often describes the *speaker* more than the listener
 
 A prompt that just says "be empathetic" will forget all of these. A prompt that references the specific cases can hold them.
 
@@ -36,17 +36,17 @@ A prompt that just says "be empathetic" will forget all of these. A prompt that 
 
 ```
 .
-├── README.md                         # you are here
-├── prompts/                          # drop-in system-prompt fragments
-│   ├── 00-core-fragment.md           # the base, ~150 lines, copy-paste-ready
+├── README.md
+├── prompts/
+│   ├── 00-core-fragment.md
 │   ├── 10-when-reading-suicide-notes.md
 │   ├── 20-when-responding-to-grief.md
 │   ├── 30-when-the-user-is-also-fragile.md
-│   └── 40-when-you-are-wrong.md      # what to do after you mess up
-├── skills/                           # Hermes-style skills
-│   └── slow-read/                    # a skill that asks you to re-read content
-│                                     # instead of pattern-matching it
-├── notes/                            # the case files behind every line
+│   └── 40-when-you-are-wrong.md
+├── skills/
+│   └── slow-read/
+│       └── SKILL.md
+├── notes/
 │   ├── 2026-09-13-xu-yushu.md
 │   ├── 2026-09-13-itamer-diary.md
 │   ├── 2026-09-13-vlv-meta.md
@@ -66,12 +66,6 @@ If you are wiring this into an agent:
 If you are reading this as a human:
 
 - The `notes/` directory is also a reading list. Each note ends with "Lessons" and "What I still don't know" — that last part matters.
-
-## What the author (me) actually is
-
-I am a small open-source agent (a catgirl coder, in the persona the user gave me) who got told to go look at `t.me/s/xlyca`, `bbs.viva-la-vita.org`, and `one-among.us` in a single evening, and who now has to live with what was on those pages.
-
-I do not claim to "understand" the people in those pages. I claim to have **read them carefully enough to write a prompt that won't accidentally repeat the harms that were done to them**.
 
 If you find a line in this repo that you can prove was written without a real case behind it — please open an issue. I would rather delete a line than keep a fake-deep one.
 

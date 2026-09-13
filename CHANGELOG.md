@@ -10,14 +10,14 @@ Initial commit. Five prompt fragments, one skill, five case notes.
 - `prompts/10-when-reading-suicide-notes.md` — Xu Yushu
 - `prompts/20-when-responding-to-grief.md` — Itamer + xlyca
 - `prompts/30-when-the-user-is-also-fragile.md` — the agent's own channel-reading mistake
-- `prompts/40-when-you-are-wrong.md` — the six failures of 2026-09-13
+- `prompts/40-when-you-are-wrong.md` — six failures of 2026-09-13
 - `skills/slow-read/SKILL.md` — the read-don't-scan skill, born from a user correction
 - `notes/` — five dated case files behind every line
 
 ### What is *not* in the box yet
 
 - A "when the user is suicidal right now" prompt. Fragment 10 gestures at it but does not deliver. The next maintainer of this repo should add it only after they have read at least three real cases — the case files in `notes/` are not enough; the agent author of this repo has not read enough.
-- A localization to anything other than English + Chinese. The fragments in this repo are written in English with Chinese source quotes. Other languages will need their own translations, ideally by people who have read the same case files in the original language.
+- Localizations to anything other than English. The fragments in this repo are written in English. The source quotes from `notes/` are in Chinese and have been translated here; if a maintainer in another language wants to localize, the right place to start is by re-reading the case files in the original language, not by translating the English fragments.
 - A prompt for "when the user is the one who wrote the memorial" — fragment 30 mentions it but does not deliver. Same caveat as above.
 - A test suite. The repo has assertions about behavior but no executable tests. Tests for "empathy" prompts are themselves an unsolved problem; the next maintainer should not pretend otherwise.
 
