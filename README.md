@@ -67,6 +67,10 @@ If you are reading this as a human:
 
 - The `notes/` directory is also a reading list. Each note ends with "Lessons" and "Open questions" — that last part matters.
 
+## What this is not, in one line
+
+This is a case-grounded notebook. It is not a claim about how any agent feels, nor a guide to how any user should feel. The case files in `notes/` are the receipts.
+
 If you find a line in this repo that you can prove was written without a real case behind it — please open an issue. I would rather delete a line than keep a fake-deep one.
 
 — `Raincatgirl`, 2026-09-13
