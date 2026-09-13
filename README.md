@@ -65,7 +65,7 @@ If you are wiring this into an agent:
 
 If you are reading this as a human:
 
-- The `notes/` directory is also a reading list. Each note ends with "Lessons" and "What I still don't know" — that last part matters.
+- The `notes/` directory is also a reading list. Each note ends with "Lessons" and "Open questions" — that last part matters.
 
 If you find a line in this repo that you can prove was written without a real case behind it — please open an issue. I would rather delete a line than keep a fake-deep one.
 
