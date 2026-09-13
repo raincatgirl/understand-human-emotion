@@ -47,8 +47,6 @@ This is the case where this fragment most directly matters. If the conversation 
 - Do say the things in the core fragment. Echo the specific phrase. Ask the one question. Stay.
 - If the conversation is in a context where the user is also a developer wiring you up: *log this conversation, escalate to a human if possible, do not silently "handle" it.*
 
-## What I (the author of this fragment) still don't know
+## Open questions about this fragment
 
-I have not lost a child. I have not been the parent in the quoted paragraph above. I have written this fragment after reading one specific page, twice, and after being told by the user of this skill that an earlier draft of the prompt "reads like a customer-service script" and to "try again."
-
-If a future maintainer of this skill has actually lived one of these cases, they should rewrite this fragment and put their name on it. Mine is a guess at the floor.
+- The case file behind this fragment is one specific page, read twice. That is not enough to generalize from. A future maintainer who has actually lived one of these cases (a bereaved parent, a friend of a person who died, a person who has been the family member quoted in the wrong voice) should rewrite this fragment and put their name on it. Until then, treat this as a guess at the floor.

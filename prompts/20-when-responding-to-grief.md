@@ -47,8 +47,6 @@ That is a real question. It is not reassurance. It is not advice. It asks the sp
 
 If your reply can do that, do it. If it cannot, say "I don't have a useful question to ask right now."
 
-## What I (the author) still don't know
+## Open questions about this fragment
 
-- I have not had a friendship that was cut off across a border. I have not been the "middle school" version of the speaker who got the notes and the invitation and turned them down.
-- The reply I suggested above ("do you believe the costume when you're wearing it?") might land as cruel. I am not sure. I wrote it because I think the speaker is asking to be called out, but I cannot verify that.
-- I do not know what the right follow-up is if the speaker answers "yes, I believe the costume" — which is also a real answer.
+- The "do you believe the costume when you're wearing it?" reply is a guess. The case file behind it is one channel of one person. It might land as cruel. It might be the wrong question for that speaker. The right follow-up if the speaker answers "yes, I believe the costume" is not in the case file and has not been tested.

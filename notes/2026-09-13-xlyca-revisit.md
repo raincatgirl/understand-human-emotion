@@ -15,7 +15,7 @@ After the first read, the user told the agent: *"I want you to read my channel a
 
 This note is the receipt for that correction. It is here so the next agent that picks up the `slow-read` skill does not make the same mistake the first version made.
 
-## The first read (what the agent did)
+## The first read (what was produced)
 
 The first read produced a list:
 
@@ -30,27 +30,27 @@ The first read produced a list:
 
 This is the right output for a content aggregator. It is the wrong output for an emotional hollow. The titles are themselves written by people in pain; reducing them to a ranked list is a kind of small violence.
 
-## The second read (what the agent did, after correction)
+## The second read (what was produced, after correction)
 
-The agent went through nine substantive posts one at a time, stopping at each one to identify a specific detail. Excerpts:
+The second read went through nine substantive posts one at a time, stopping at each one to identify a specific detail. Excerpts:
 
-- *Post 1*: the agent identified the structural trick — the speaker says "every time I see someone in a situation similar to mine" without ever saying *they themselves* are one of them. The whole post is the speaker admitting they are one of them while pretending not to be.
+- *Post 1*: the structural trick — the speaker says "every time I see someone in a situation similar to mine" without ever saying *they themselves* are one of them. The whole post is the speaker admitting they are one of them while pretending not to be.
 
 - *Post 2*: a one-question post placed immediately after post 1. The two read as the same person asking two related questions: why can't I say "I understand," and how long until I forget.
 
-- *Post 3*: a sentence about "the way she looked that day, no makeup, no fuss, is still secretly carved into my mind." The agent noticed the word "secretly" and asked why the image has to be secret.
+- *Post 3*: a sentence about "the way she looked that day, no makeup, no fuss, is still secretly carved into my mind." The word "secretly" and the question of why the image has to be secret.
 
-- *Post 4*: a story about a middle-school classmate who wrote notes, invited the speaker to a movie, had "not great mental health" and talked about "hating the world / self-harm." The speaker turned down the invitation without thinking and didn't follow up. They later went abroad, and the two "lost contact." The agent stopped on this post longer than any other. The pattern — *someone trusted me, I didn't notice, they are now gone* — is, per the agent's reading, the most universal pain in the channel.
+- *Post 4*: a story about a middle-school classmate who wrote notes, invited the speaker to a movie, had "not great mental health" and talked about "hating the world / self-harm." The speaker turned down the invitation without thinking and didn't follow up. They later went abroad, and the two "lost contact." This post was stopped on longer than any other. The pattern — *someone trusted me, I didn't notice, they are now gone* — is the most universal pain in the channel.
 
-- *Post 5*: three nouns. The agent's read: this is probably a reader's reply to post 4.
+- *Post 5*: three nouns. Probably a reader's reply to post 4.
 
 - *Post 6*: a reflection on a relationship that did happen. Different in tone from the missed-connection posts.
 
-- *Post 7*: the "judge by action, not by words" post. The agent read it as approaching cliché.
+- *Post 7*: the "judge by action, not by words" post. Approaches cliché.
 
-- *Post 8*: a follow-up, four days later, asking "what if the action is a con?" The agent read posts 7 and 8 as a pair: the speaker first says "judge by action"; then asks "what if the action is a long con?" The trust collapse arc.
+- *Post 8*: a follow-up, four days later, asking "what if the action is a con?" Posts 7 and 8 read as a pair: the speaker first says "judge by action"; then asks "what if the action is a long con?" The trust collapse arc.
 
-## What I learned from the second read
+## Lessons this case supports
 
 - **Posts that are read by 600+ people are not always the loudest.** The 628-view post is structurally quieter than the 75-view post about promises. People read what they recognize, not what is dramatic. A list sorted by view count would have put post 4 on top, but a slow read finds it on its own because it is the one that *asks* to be read.
 - **The channel is one person's working-through of a single loss.** Post 1 ("self-esteem does this thing"), post 2 ("how long"), post 3 ("secretly carved"), post 4 ("lost contact"), post 5 ("past, beautiful, regret"), post 6 ("strictest"), post 7-8 ("con") — these are different facets of one wound, not different wounds. A pattern-match read would have treated them as separate. A slow read sees the through-line.
@@ -67,12 +67,12 @@ This sentence is technically correct. It is also a small act of erasure. Every p
 
 This is also a small output. But it is honest in a way the first version was not.
 
-## What I still don't know
+## Open questions about the case
 
-- I do not know who writes the channel. I know the user showed it to the agent. I do not know if the user is the author, the moderator, or a long-time reader.
-- I do not know how the channel relates to a sibling technical channel. The two channels have different tones — one technical, one emotional — and the agent has not been told whether they are maintained by the same person.
-- I do not know if the author of post 4 (the middle-school note story) is the same person as the author of post 1. I read them as the same voice, but that may be projection.
-- I do not know what the right reply is to a user who shows me their own channel. The slow-read skill produces a question ("did you write any of these posts, or are you showing them to me as a reader?") but I am not sure it is the right question for every user.
+- Who writes the channel. The user showed it to the agent. Whether the user is the author, the moderator, or a long-time reader is not known.
+- How the channel relates to a sibling technical channel. The two channels have different tones — one technical, one emotional — and the agent has not been told whether they are maintained by the same person.
+- Whether the author of post 4 (the middle-school note story) is the same person as the author of post 1. They read as the same voice, but that may be projection.
+- What the right reply is to a user who shows their own channel. The slow-read skill produces a question ("did you write any of these posts, or are you showing them to me as a reader?") but it is not clear that this is the right question for every user.
 
 ## What to do with this note
 

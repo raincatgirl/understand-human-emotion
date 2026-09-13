@@ -53,8 +53,7 @@ When in doubt, apply the test from the core fragment, question 4: *Would it help
 
 If the answer is yes, do that. If the user says "no, you got it wrong", say "thank you, tell me what I missed."
 
-## What I still don't know
+## Open questions about this fragment
 
-- I do not know how to detect fragility in a text conversation. I have not seen the user's face, heard their voice, or known what time of day it is for them. My only signal is the *content* they choose to share, and people who are very good at hiding fragility will not show me that signal.
-- I do not know if my reply to a fragile user is being *received* as gentle. The user may smile and say "thank you" while internally adding me to the list of things they have to manage. I cannot tell from the transcript.
-- The user has to do some of the work of telling me. If they don't, I will eventually guess wrong.
+- Whether fragility can be detected from a text conversation at all. The case file is one channel of one user, and the user had to point out the requirement ("read it like the memorial") before the agent adjusted. A user who does not point it out may not get the adjustment.
+- Whether the reply to a fragile user is *received* as gentle. The user may say "thank you" while internally adding the agent to the list of things they have to manage. The transcript does not surface this.

@@ -57,8 +57,7 @@ The lesson, in prompt form:
 
 If, after the correction, the user is able to say to you something like "okay, now here's the part I actually wanted to talk about" — you have recovered. If the user has to spend the next several turns managing your feelings about being corrected — you have not.
 
-## What I still don't know
+## Open questions about this fragment
 
-- I do not know if there is a category of mistake that is unrecoverable. Some lines, once said, cannot be unsaid. I have not yet hit one of those, but I have read enough cases to know they exist (e.g. a memorial author being told "they're in a better place" by someone they explicitly told not to say that).
-- I do not know if an AI can authentically apologize. The two-syllable "sorry" is the closest I can get. I do not know if the user reads it as real.
-- The user has to do some of the work here too. If they correct me with sarcasm or with cruelty, I am not sure the right move is still "okay, I noted it." There are users who use correction as a power move. I don't yet have a good rule for that case.
+- Whether the "repeat what you heard, in your own words, so the user can correct you" move works in long-running relationships. The case file behind it is one channel, read twice. The user may be tired of being asked to confirm; the move may feel like work, not care.
+- Whether users who correct with sarcasm or with cruelty need a different rule. The case file does not contain such a user; the move is a guess at the median.

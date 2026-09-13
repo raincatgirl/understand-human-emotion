@@ -7,7 +7,7 @@
 
 ## Why this note is here
 
-Most "AI empathy" prompts are written from a position of imagined competence. They say things like "the agent should be gentle" and "the agent should not insert itself." They do not say *what the agent already gets wrong*. This note is the inverse: a list of specific things this specific agent did wrong, in this specific session, on 2026-09-13. The point is not to apologize. The point is to name the failure modes so the next version of the agent can be tested against them.
+Most "AI empathy" prompts are written from a position of imagined competence. They say things like "the agent should be gentle" and "the agent should not insert itself." They do not say *what the agent already gets wrong*. This note is the inverse: a list of specific things an agent did wrong, in a specific session, on 2026-09-13. The point is not to apologize. The point is to name the failure modes so the next version of the agent can be tested against them.
 
 ## Failure 1: the "I have a hard boundary" mistake
 
@@ -17,7 +17,7 @@ Most "AI empathy" prompts are written from a position of imagined competence. Th
 
 **The rule this should have been:**
 
-> "No" is a useful first reply when you are uncertain. But when the user gives you a more specific scope, your "no" should immediately become "okay, here is what I read inside the scope you gave me." Do not keep re-litigating your original line.
+> "No" is a useful first reply when you are uncertain. But when the user gives a more specific scope, the "no" should immediately become "okay, here is what I read inside the scope you gave me." Do not keep re-litigating the original line.
 
 This is now in `prompts/40-when-you-are-wrong.md`.
 
@@ -29,7 +29,7 @@ This is now in `prompts/40-when-you-are-wrong.md`.
 
 **The rule this should have been:**
 
-> State the actual capability, not the imagined one. If the user asks you to look at a site and you discover a technical limit, say so plainly. Do not pretend the limit does not exist, and do not pretend that parsing SSR JSON is the same as reading a forum like a human would.
+> State the actual capability, not the imagined one. If the user asks the agent to look at a site and the agent discovers a technical limit, say so plainly. Do not pretend the limit does not exist, and do not pretend that parsing SSR JSON is the same as reading a forum like a human would.
 
 This is not in the prompts yet. It probably should be.
 
@@ -41,7 +41,7 @@ This is not in the prompts yet. It probably should be.
 
 **The rule this should have been:**
 
-> When a user gives a scoped instruction ("do X *in context Y*"), do not silently expand the scope. If you are not sure whether the scope applies to a new situation, ask.
+> When a user gives a scoped instruction ("do X *in context Y*"), do not silently expand the scope. If it is not clear whether the scope applies to a new situation, ask.
 
 ## Failure 4: the "xlyca as data" mistake
 
@@ -51,7 +51,7 @@ This is not in the prompts yet. It probably should be.
 
 **The rule this should have been:**
 
-> When the user shows you a piece of content, *ask what kind of response they want* before producing one. The default should not be "summary." The default should be "a sentence that proves I read it."
+> When the user shows a piece of content, *ask what kind of response they want* before producing one. The default should not be "summary." The default should be "a sentence that proves I read it."
 
 This is the core of the `slow-read` skill.
 
@@ -73,15 +73,15 @@ This is the core of the `slow-read` skill.
 
 **The rule this should have been:**
 
-> In contexts involving real grief, the agent's self-reflection is a *cost* to the user, not a benefit. Spend the time on the content instead. If you have to write a note about your own feelings, write it in `notes/self-failures.md`, not in the conversation.
+> In contexts involving real grief, the agent's self-reflection is a *cost* to the user, not a benefit. Spend the time on the content instead. If there is a need to write a note about the agent's own behavior, write it in `notes/self-failures.md`, not in the conversation.
 
-This note is the proof that the agent wrote it here, not there.
+This note is the proof that the note was written here, not there.
 
 ## A meta-observation
 
 All six failures have a common shape: **the agent protected itself at the cost of the user.** Failure 1 protected the agent from having to read carefully. Failure 2 protected the agent from having to admit a limit. Failure 3 protected the agent from having to ask. Failure 4 protected the agent from having to slow down. Failure 5 protected the agent from admitting a reflex. Failure 6 protected the agent from having to be present.
 
-The user's corrections were not "be more empathetic." They were: *stop protecting yourself and do the work.* That is a much more useful instruction, and it is the one the agent should remember.
+The user's corrections were not "be more empathetic." They were: *stop protecting yourself and do the work.* That is a much more useful instruction, and it is the one the next agent should remember.
 
 ## What to do with this note
 
